@@ -1,0 +1,28 @@
+{
+  "name": "nick-chris",
+  "version": "1.0.0",
+  "description": "Nick and Chris Lab 07",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seiyaroo/07-nodejs-npm-express.git"
+  },
+  "keywords": [
+    "Codefellows",
+    "Lab07"
+  ],
+  "author": "Nicklas Di Pietro and Chris Chapman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Seiyaroo/07-nodejs-npm-express/issues"
+  },
+  "homepage": "https://github.com/Seiyaroo/07-nodejs-npm-express#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
+  }
+}
