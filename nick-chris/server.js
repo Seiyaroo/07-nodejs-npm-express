@@ -27,9 +27,9 @@ app.get('/newblog', (request, response) => {
   response.sendFile('public/new.html', { root: '.'}); 
 }); 
 // 404 response !!!! 
-app.use((request, response, next) => {
-  console.log(`Oh No!! Could not find file ${request} `);
-  response.status(404).sendFile('404.html', { root: 'public' }); 
+app.use((req, res, next) => {
+  console.log(`Oh No, it's 404! Could not find file ${req.originalUrl}`);
+  res.status(404).send(`<h1> Nick &amp; Chris are Cool!</h1><h2>You are a 404 fool! </h2><p>I pity the fool looking for </p> <code>  ${req.originalUrl} </code>`); 
 }); 
 
 // Listener on a post
