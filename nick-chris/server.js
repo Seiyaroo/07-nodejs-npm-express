@@ -1,6 +1,6 @@
 'use strict';
 
-//TODO: Finish out the server code according to the instructions in the lab README
+//DONE: Finish out the server code according to the instructions in the lab README
 // Load the express dependency
 const express = require('express');
 
@@ -18,12 +18,12 @@ app.use(express.static('./public'));
 
 // routes
 app.get('/kilovolt', (request, response) => {
-  console.log('We got a kilovolt request!');
+  // console.log('We got a kilovolt request!');
   response.sendFile('./public/', {root: '.'});
 });
 
 app.get('/newblog', (request, response) => {
-  console.log('You got something to say!'); 
+  // console.log('You got something to say!'); 
   response.sendFile('./public/new.html', { root: '.'}); 
 }); 
 // Listener on a post
