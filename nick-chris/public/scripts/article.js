@@ -48,9 +48,8 @@ Article.prototype.insertRecord = function(callback) {
   $.post('/articles', {author: this.author, authorUrl: this.authorUrl, body: this.body, category: this.category, publishedOn: this.publishedOn, title: this.title})
     .then(data => {
       console.log(data);
-
-      // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-      // PUT YOUR RESPONSE HERE
+      // DONE COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
+      // This one line if statements says to run the callback function that was passed as a paramater. However in our current setup 'callback' is not set and as it is undefined the if statement evaluates as false and does not run a callback function. 
       if (callback) callback();
     })
 };
